@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=VT323&display=swap');
+
+:root {
+    background-color: #121212;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Exo', sans-serif;
+}
+
+.btn {
+    font-family: 'VT323', monospace;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.box {
+    max-width: 60rem;
+    margin: 10rem auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: black;
+}
+
+/* HOME PAGE */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.home-page .btn {
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding: 4rem 2rem;
+    width: 50rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    background-color: blue;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Turret Road', cursive;
+}
+
+.home-page .btn:hover {
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+    transform: scale(1.03);
+}
+
+.home-page .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* GAME PAGE */
+
+
+
