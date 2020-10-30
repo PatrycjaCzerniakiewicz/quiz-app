@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="home-page hide">
+    <div class="home-page">
         <h1>Zaczynamy?</h1>
-        <button type="button" class="btn">Start</button>
+        <p>Ilość pytań: <span class="total-question"></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Start</button>
     </div>
 
-    <div class="game-page box">
+    <div class="game-page hide box">
         <div class="question-number">
 
         </div>
@@ -31,5 +31,39 @@
         </div>
     </div>
 
+    <div class="result-page box hide">
+        <h1>Wynik</h1>
+        <table>
+            <tr>
+                <td>Ilość pytań</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Odpowiedzi</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Poprawne</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Błędne</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Procent</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Twój wynik</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgain()">Try Again</button>
+        <button type="button" class="btn" onclick="goHome()">Powrót</button>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
